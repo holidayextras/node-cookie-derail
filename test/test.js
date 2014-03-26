@@ -1,0 +1,4 @@
+var derail = require('../');
+var example = 'BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJWNmNmRiMGFhODcyOTU2MDk3YjYyMDdmMjU0M2ViMmIzBjsAVEkiEHRhbF9zZXNzaW9uBjsARkkiFWIwNDM2MGRkNWU1ODBhMmUGOwBGSSIZd2FyZGVuLnVzZXIudXNlci5rZXkGOwBUWwdbBmkCqwdJIiIkMmEkMTAkYk44ZC5UWFVXcHNiVnA2QzFUM3IwdQY7AFQ%3D--c4fb2f5bbdd0e3f51c6e16e23bd89627277da898'
+
+console.log(derail.decode(example));
