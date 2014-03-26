@@ -1,7 +1,7 @@
 {
   "name": "cookie-derail",
   "version": "0.0.0",
-  "description": "Decode Ruby on Rails' cookies. Without the JSON monkey patch.",
+  "description": "Decode Ruby on Rails' cookies, without monkey patching in serializing to JSON",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha"
@@ -12,6 +12,9 @@
   "devDependencies": {
   	"mocha": "1.18.2"
   },
-  "author": "Ollie Buck",
+  "keywords": [
+    "ruby", "rails", "session"
+  ],
+  "author": "Ollie Buck <ollie.buck@holidayextras.com>",
   "license": "BSD"
 }
