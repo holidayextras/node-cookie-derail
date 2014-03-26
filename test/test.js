@@ -9,13 +9,19 @@ describe('cookie-derail', function() {
   it('throws an error if no secret token is passed', function() {
     assert.throws(function() {
       derail.decode(example);
-    }, /no secret token provided/i)
+    }, /no secret token provided/i);
   });
 
   it('throws an error if an invalid secret token is passed', function() {
     assert.throws(function() {
       derail.decode(example, { secret: 'abababbabababababbabababbababababbabababababbaba' });
-    }, /signature verification failed/i)
+    }, /signature verification failed/i);
+  });
+
+  it('throws an error if the marshaled data is undecodable', function() {
+    assert.throws(function() {
+      derail.decode(example.substring(3), { verifySignature: false });
+    }, /could not unmarshal cookie data/i);
   });
 
   it('deliberately does not verify the cookie if an option is passed', function() {
