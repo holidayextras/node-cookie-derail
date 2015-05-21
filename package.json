@@ -1,6 +1,6 @@
 {
   "name": "cookie-derail",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Decode Ruby on Rails' cookies, without monkey patching in serializing to JSON",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": "https://github.com/holidayextras/node-cookie-derail",
   "dependencies": {
-  	"marsha": "0.0.1"
+  	"marsha": "0.1.0"
   },
   "devDependencies": {
   	"mocha": "1.18.2"
