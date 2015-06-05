@@ -34,7 +34,7 @@ describe('cookie-derail', function() {
 
   it('reads and returns the value if the correct signature is passed', function() {
     assert.deepEqual(derail.decode(example, { secret: SECRET_TOKEN }), {
-      session_id: '89e0b81fed16d5306673bfdsbsdjhlasdfbldfjhbdfhbadsfbf52554996d5',
+      session_id: '89e0b81fed16d5306673bf52554996d5',
       tal_session: '4a26dddb2393a7c5',
       'warden.user.user.key': [[5], '$2a$10$7IusrZ3aIunZYADENT8PEu']
     });
