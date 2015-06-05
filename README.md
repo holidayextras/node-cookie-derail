@@ -1,6 +1,8 @@
 Cookie Derail
 =============
 
+[![Build Status](https://travis-ci.org/holidayextras/node-cookie-derail.svg?branch=master)](https://travis-ci.org/holidayextras/node-cookie-derail)
+
 Decode, and optionally verify the signature of, unencrypted Ruby on Rails cookies.
 
 Alternative implementations of this require you to change the default serialization format on the Rails app's side to something like JSON - this does not, instead using a basic (hashes/arrays/strings/numbers only) [Marshal parser](http://github.com/shackpank/marsha) written in javascript.
